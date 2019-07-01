@@ -77,7 +77,7 @@
                 dist = dist * 60 * 1.1515;
                 if (unit == "K") { dist = dist * 1.609344 }
                 if (unit == "N") { dist = dist * 0.8684 }
-                var distance = dist / 5280;
+                var distance = dist;
                 console.log(distance);
                 $("#coordsDiv").append("<div>Latitude: " + latitude + " | Longitude: " + longitude + " | Distance: " + distance + "</div>");
                 return distance;
