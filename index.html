@@ -109,8 +109,8 @@
                         { latitude: oldLat, longitude: oldLong },
                         { latitude: latitude, longitude: longitude }
                     );
-                    distance = distM / 3.28084;
-                    console.log(distance);
+                    distance = distM * 5;
+                    console.log(distance + " feet");
                     $("#coordsDiv").append("<div>Latitude: " + latitude + " | Longitude: " + longitude + " | Distance: " + distance + "</div>");
                     oldLat = latitude;
                     oldLong = longitude;
@@ -142,8 +142,8 @@
                         { latitude: oldLat, longitude: oldLong },
                         { latitude: latitude, longitude: longitude }
                     );
-                    distance = distM / 3.28084;
-                    console.log(distance);
+                    distance = distM * 5;
+                    console.log(distance + " feet");
 
                     $("#coordsDiv").append("<div>Latitude: " + latitude + " | Longitude: " + longitude + " | Distance: " + distance + "</div>");
                     oldLat = latitude;
