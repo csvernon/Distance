@@ -15,75 +15,7 @@
         var unit = "M";
         var latitude = "";
         var longitude = "";
-        // if (navigator.geolocation) {
-        //     navigator.geolocation.getCurrentPosition(function (position) {
-        //         var latitude = position.coords.latitude;
-        //         var longitude = position.coords.longitude;
-        //         var accuracy = position.coords.accuracy;
-
-        //         var capa = document.getElementById("capa");
-
-        //         console.log(latitude);
-        //         console.log(longitude);
-        //         console.log(accuracy);
-
-        //     },
-        //         function error(msg) { alert('Please enable your GPS position feature.'); },
-        //         { maximumAge: 10000, timeout: 5000, enableHighAccuracy: true });
-        // } else {
-        //     alert("Geolocation API is not supported in your browser.");
-        // }
-
-        // alert(calcCrow(35.897376, -78.6494807, 35.8973972, -78.6492278).toFixed(1));
-
-
-
-        //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
-        // function calcCrow(lat1, lon1, lat2, lon2) {
-        //     var R = 6371; // km
-        //     var dLat = toRad(lat2 - lat1);
-        //     var dLon = toRad(lon2 - lon1);
-        //     var lat1 = toRad(lat1);
-        //     var lat2 = toRad(lat2);
-
-        //     var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        //         Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
-        //     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        //     var d = R * c;
-        //     console.log(d);
-        //     alert(toRad(d).toFixed(1));
-
-        //     return d;
-        // }
-        // // Converts numeric degrees to radians
-        // function toRad(value) {
-        //     var distance = value * Math.PI / 180;
-        //     console.log(distance)
-
-        //     return value * Math.PI / 180;
-        // }
-
-        // function distance(lat1, lon1, lat2, lon2, unit) {
-        //     {
-        //         var radlat1 = Math.PI * lat1 / 180;
-        //         var radlat2 = Math.PI * lat2 / 180;
-        //         var theta = lon1 - lon2;
-        //         var radtheta = Math.PI * theta / 180;
-        //         var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
-        //         if (dist > 1) {
-        //             dist = 1;
-        //         }
-        //         dist = Math.acos(dist);
-        //         dist = dist * 180 / Math.PI;
-        //         dist = dist * 60 * 1.1515;
-        //         if (unit == "K") { dist = dist * 1.609344 }
-        //         if (unit == "N") { dist = dist * 0.8684 }
-        //         var distance = dist;
-        //         console.log(distance);
-        //         $("#coordsDiv").append("<div>Latitude: " + latitude + " | Longitude: " + longitude + " | Distance: " + distance + "</div>");
-        //         return distance;
-        //     }
-        // }
+      
         $(document).ready(function () {
             $("#recordLoc").hide();
             $("#firstLoc").click(function () {
